@@ -42,8 +42,8 @@ class GUI(QMainWindow):
         #for pw gen
         Llet = string.ascii_lowercase
         Ulet = string.ascii_uppercase
-        Spe = '+-!"#¤%&'
-        Num = '0123456789'
+        Spe = '+-!"#%&'
+        Num = string.digits
         self.ranSym = Llet + Ulet + Spe + Num
         
         self.create.clicked.connect(self.cmdGeneratePassword)
